@@ -1,7 +1,7 @@
 describe('Hacker Stories', () => {
   beforeEach(() => {
-    cy.visit('/')
-
+    cy.visit('/visit')
+        
     cy.assertLoadingIsShownAndHidden()
     cy.contains('More').should('be.visible')
   })
